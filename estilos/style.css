@@ -23,7 +23,7 @@ footer {
 }
 
 canvas {
-    outline: 2px groove black;
+    outline: 2px solid black;
     max-width: 100%;
     max-height: 100%;
     margin: auto;
