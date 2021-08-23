@@ -1,0 +1,32 @@
+body {
+    background: #232426;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 3px 3px 10px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+canvas {
+    outline: 2px groove black;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
