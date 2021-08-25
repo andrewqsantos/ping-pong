@@ -5,22 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ping Pong</title>
-    <link rel="stylesheet" href="estilos/style.css">
 </head>
     <body>
-        <header>
-            <h1>Ping Pong</h1>
-        </header>
-
-        <section>
-            <div>
-                <canvas id="folha" width="600" height="500"></canvas>
-            </div>
-        </section>
-        
-        <footer>
-            <p>Desenvolvido com &#128151 </p>
-        </footer>
+        <canvas id="folha" width="600" height="500"></canvas>
 
         <script>
             // carrega os primeiros comandos
@@ -62,7 +49,7 @@
             }
 
             function desenhar() {
-                areaDesenho.fillStyle = "#181818" //cor verde
+                areaDesenho.fillStyle = "#286047" //cor verde
                 areaDesenho.fillRect(
                     0,
                     0,
@@ -70,7 +57,7 @@
                     alturaCampo
                 )
 
-                areaDesenho.fillStyle = "#FFFFFF"
+                areaDesenho.fillStyle = "#ffffff" //cor branca
                 
                 areaDesenho.fillRect(
                     larguraCampo / 2 - espessuraRede / 2,
@@ -86,18 +73,6 @@
                     diametroBola
                 )
 
-                // Escrever a pontuação do jogador
-                areaDesenho.fillText(
-                    "Humano - " + pontuacaoJogador1 + " pontos",
-                    100,
-                    100
-                )
-                areaDesenho.fillText(
-                    "Computador - " + pontuacaoJogador2 + " pontos",
-                    larguraCampo - 200,
-                    100
-                )
-
                 // Raquetes
                 areaDesenho.fillRect(
                     0,
@@ -110,7 +85,19 @@
                     posicaoJogador2,
                     espessuraRaquete,
                     alturaRaquete
-                ) 
+                )
+
+                // Escrever a pontuação do jogador
+                areaDesenho.fillText(
+                    "Humano - " + pontuacaoJogador1 + " pontos",
+                    100,
+                    100
+                )
+                areaDesenho.fillText(
+                    "Computador - " + pontuacaoJogador2 + " pontos",
+                    larguraCampo - 200,
+                    100
+                )
             }
 
             function calcular() {
